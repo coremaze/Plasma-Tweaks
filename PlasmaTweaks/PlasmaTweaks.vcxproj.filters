@@ -33,6 +33,9 @@
     <ClInclude Include="utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="vertex_crash_fix.h">
+      <Filter>Header Files\patches</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -46,6 +49,9 @@
     </ClCompile>
     <ClCompile Include="utils.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vertex_crash_fix.cpp">
+      <Filter>Source Files\patches</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,6 +1,7 @@
 // dllmain.cpp : Defines the entry point for the DLL application.
 #include "pch.h"
 #include "widget_icon.h"
+#include "vertex_crash_fix.h"
 #include "utils.h"
 
 
@@ -13,6 +14,7 @@
 extern "C" __declspec(dllexport) const char* __stdcall Init(void* var1, void* var2) {
 	InitBase();
 	widget_icon_initialize();
+	vertex_crash_fix_initialize();
 	return "";
 }
 

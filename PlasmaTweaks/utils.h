@@ -28,3 +28,17 @@ void WriteJMP(T1* _location, T2* _function) {
 
 	VirtualProtect(location, 5, dwOldProtection, &dwOldProtection);
 }
+
+template <typename T1, typename T2>
+void WriteCall(T1* _location, T2* _function) {
+	char* location = (char*)_location;
+	char* function = (char*)_function;
+
+	DWORD dwOldProtection;
+	VirtualProtect(location, 5, PAGE_EXECUTE_READWRITE, &dwOldProtection);
+
+	location[0] = 0xE8; //call
+	*((DWORD*)(location + 1)) = (DWORD)((function - location) - 5);
+
+	VirtualProtect(location, 5, dwOldProtection, &dwOldProtection);
+}
