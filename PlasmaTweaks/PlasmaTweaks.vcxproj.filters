@@ -36,6 +36,12 @@
     <ClInclude Include="vertex_crash_fix.h">
       <Filter>Header Files\patches</Filter>
     </ClInclude>
+    <ClInclude Include="allocation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gl_shader_version.h">
+      <Filter>Header Files\patches</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -51,6 +57,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="vertex_crash_fix.cpp">
+      <Filter>Source Files\patches</Filter>
+    </ClCompile>
+    <ClCompile Include="allocation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl_shader_version.cpp">
       <Filter>Source Files\patches</Filter>
     </ClCompile>
   </ItemGroup>

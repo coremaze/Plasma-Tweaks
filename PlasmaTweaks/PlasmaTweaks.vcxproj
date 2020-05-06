@@ -125,6 +125,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;PLASMATWEAKS_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -155,13 +156,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="allocation.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="gl_shader_version.h" />
     <ClInclude Include="vertex_crash_fix.h" />
     <ClInclude Include="utils.h" />
     <ClInclude Include="widget_icon.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="allocation.cpp" />
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -169,6 +173,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="gl_shader_version.cpp" />
     <ClCompile Include="vertex_crash_fix.cpp" />
     <ClCompile Include="utils.cpp" />
     <ClCompile Include="widget_icon.cpp" />
