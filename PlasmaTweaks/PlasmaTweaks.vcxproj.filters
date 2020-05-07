@@ -42,6 +42,12 @@
     <ClInclude Include="gl_shader_version.h">
       <Filter>Header Files\patches</Filter>
     </ClInclude>
+    <ClInclude Include="update_version.h">
+      <Filter>Header Files\patches</Filter>
+    </ClInclude>
+    <ClInclude Include="version">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -63,6 +69,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="gl_shader_version.cpp">
+      <Filter>Source Files\patches</Filter>
+    </ClCompile>
+    <ClCompile Include="update_version.cpp">
       <Filter>Source Files\patches</Filter>
     </ClCompile>
   </ItemGroup>

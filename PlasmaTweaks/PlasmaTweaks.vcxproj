@@ -159,6 +159,8 @@
     <ClInclude Include="allocation.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="gl_shader_version.h" />
+    <ClInclude Include="update_version.h" />
+    <ClInclude Include="version" />
     <ClInclude Include="vertex_crash_fix.h" />
     <ClInclude Include="utils.h" />
     <ClInclude Include="widget_icon.h" />
@@ -174,6 +176,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="gl_shader_version.cpp" />
+    <ClCompile Include="update_version.cpp" />
     <ClCompile Include="vertex_crash_fix.cpp" />
     <ClCompile Include="utils.cpp" />
     <ClCompile Include="widget_icon.cpp" />
